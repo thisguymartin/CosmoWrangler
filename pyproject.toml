@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "search-hound-ai"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["thisguymartin <mpatino117@gmail.com>"]
 readme = "README.md"
