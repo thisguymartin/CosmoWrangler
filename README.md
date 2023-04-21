@@ -9,7 +9,6 @@ This project aims to create an AI CLI tool that can execute AI-based commands vi
 - Work with different operating systems such as IOS, LINUX, and WINDOWS
 - Accept user inputs in the form of text, voice, or images
 - Provide outputs to the user via the command line
-- Utilize .NET to ensure cross-platform compatibility
 
 ## Non-Functional Requirements
 
