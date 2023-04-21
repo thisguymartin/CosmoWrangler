@@ -3,6 +3,7 @@
 import os
 import fire
 import logging
+import sys
 
 from search_hound_ai.search_hound_lib import SearchHoundLib
 
@@ -19,4 +20,4 @@ def main():
     fire.Fire(SearchHoundLib, name='search-hound')
 
 if __name__ == '__main__':
-    main()
+  sys.exit(main())
