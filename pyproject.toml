@@ -19,4 +19,5 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-search-hound-ai-cli = 'search-hound-ai.app:main:run'
+search-hound-ai-cli = 'app:main'
+
