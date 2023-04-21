@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "SearchHoundAI"
+name = "search-hound-ai"
 version = "0.1.0"
 description = ""
 authors = ["thisguymartin <mpatino117@gmail.com>"]
@@ -17,3 +17,6 @@ pytest = "^7.3.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+search-hound-ai-cli = 'search-hound-ai.app:main:run'
