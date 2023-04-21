@@ -1,8 +1,6 @@
+from search_hound_ai.openai_lib import OpenAISearch
 
-from wrangle.openai_lib import OpenAISearch
-
-
-class WrangleLib:
+class SearchHoundLib:
     """"Provides a simple interface to openai.
 
   The purpose of this simple interface is to offer a limited subset of the

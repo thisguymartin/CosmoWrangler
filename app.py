@@ -3,7 +3,8 @@
 import os
 import fire
 import logging
-from wrangle.wrangle_lib import WrangleLib
+
+from search_hound_ai.search_hound_lib import SearchHoundLib
 
 def ValidateEnv():
     openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -15,7 +16,7 @@ def ValidateEnv():
 
 def main():
     ValidateEnv()
-    fire.Fire(WrangleLib, name='wrangle')
+    fire.Fire(SearchHoundLib, name='search-hound')
 
 if __name__ == '__main__':
     main()
