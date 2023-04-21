@@ -1,4 +1,4 @@
-# CosmoWrangler
+# SearchHoundAI
 
 
 This project aims to create an AI CLI tool that can execute AI-based commands via a command-line interface. The tool is designed to work on IOS, LINUX, and WINDOWS in .NET and can accept user inputs in the form of text, voice, or images. The tool is optimized for speed and performance and is easy to install and use with clear and concise documentation. The tool is also secure and regularly updated to address any security vulnerabilities.
