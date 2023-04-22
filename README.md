@@ -24,6 +24,12 @@ Start a conversation with pip:
 hound
 ```
 
+Need assistance run:
+
+```bash
+hound --help
+```
+
 To use hound command:
 
 ```bash
