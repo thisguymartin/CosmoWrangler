@@ -13,7 +13,7 @@ def ValidateEnv():
 
 def main():
     load_dotenv()
-    app = typer.Typer(name="search_hound_ai", add_completion=True)
+    app = typer.Typer()
 
     app_client = HoundClientCommands(app)
     app_client()
