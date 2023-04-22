@@ -543,6 +543,17 @@ files = [
 python-dotenv = "*"
 
 [[package]]
+name = "logging"
+version = "0.4.9.6"
+description = "A logging module for Python"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "logging-0.4.9.6.tar.gz", hash = "sha256:26f6b50773f085042d301085bd1bf5d9f3735704db9f37c1ce6d8b85c38f2417"},
+]
+
+[[package]]
 name = "marshmallow"
 version = "3.19.0"
 description = "A lightweight library for converting complex datatypes to and from native Python datatypes."
@@ -1339,4 +1350,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "4d92bfac8f713a892ae3e38f5b22d3d8e67f478d0f7cd242e05f54e713d0094a"
+content-hash = "58b2602b0675dab23ef3365f3d852b8d6afca0233b7cce74d71538fc3be83347"

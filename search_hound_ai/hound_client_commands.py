@@ -11,7 +11,15 @@ def HoundClientCommands(app: typer) -> typer :
     This is a fast OpenAI-based search implementation that utilizes.
     """
     search_response = SearchHoundLib.searchHound(query)
-    typer.echo(search_response, err=True, color=typer.colors.YELLOW,)
+    typer.echo(search_response, err=True, color=typer.colors.GREEN)
+
+  @app.command()
+  def openai_token_value(config: str):
+    """
+    Store the OPENAI_API_KEY in the .env file.
+    """
+    config_response = SearchHoundLib.storeOpenAIConfig(config)
+    typer.echo(config_response, err=True, color=typer.colors.YELLOW,)
 
 
   return app
