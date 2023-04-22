@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "search-hound-ai"
-version = "0.1.4"
+version = "0.1.5"
 description = ""
 authors = ["Martin Patino <martin@sibipro.com>"]
 readme = "README.md"
@@ -21,4 +21,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-search-hound = "search_hound_ai.app:main"
+hound = "search_hound_ai.app:main"
