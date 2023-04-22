@@ -1,4 +1,7 @@
+import typer
+
 from search_hound_ai.openai_lib import OpenAISearch
+
 
 class SearchHoundLib:
     """"Provides a simple interface to openai.
@@ -8,7 +11,7 @@ class SearchHoundLib:
   """
 
     """A quick openai implementation to search using openai."""
-    def search(self, question):
-        response = OpenAISearch(question)
+    def searchHound(search_string: str) -> str:
+        response: str = OpenAISearch(search_string)
         return response
     
