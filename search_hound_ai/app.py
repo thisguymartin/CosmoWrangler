@@ -1,23 +1,25 @@
-#!/usr/bin/env python3
-
+import typer
 import os
-import fire
-import logging
-import sys
+from dotenv import load_dotenv
 
-from search_hound_ai.search_hound_lib import SearchHoundLib
+from search_hound_ai.hound_client_commands import HoundClientCommands
 
 def ValidateEnv():
-    openai_api_key = os.getenv('OPENAI_API_KEY')
-
-    if openai_api_key == '' or openai_api_key == None:
-        logging.error("OPENAI_API_KEY is not set")
+    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+    if OPENAI_API_KEY == '' or OPENAI_API_KEY == None:
+        print("OPENAI_API_KEY is not set")
         exit(1)
 
 
 def main():
-    ValidateEnv()
-    fire.Fire(SearchHoundLib, name='search-hound')
+    load_dotenv()
+    app = typer.Typer(name="search_hound_ai", add_completion=True)
 
-if __name__ == '__main__':
-  sys.exit(main())
+    app_client = HoundClientCommands(app)
+    app_client()
+
+
+if __name__ == "__main__":    
+    ValidateEnv()
+    main()
+
