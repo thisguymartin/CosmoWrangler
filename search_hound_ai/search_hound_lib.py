@@ -1,5 +1,6 @@
 import os
 import typer
+import pkg_resources
 
 from search_hound_ai.openai_lib import OpenAISearch
 
@@ -19,7 +20,8 @@ class SearchHoundLib:
         if config is None or config == "":
             return "OPENAI_API_KEY config provided"
         
-        text_file = open(".env", "w")
+        filename = pkg_resources.resource_filename(__name__, "../.env")
+        text_file = open(filename, "w")
         text_file.write('OPENAI_API_KEY=' + config)
         text_file.close()
 
