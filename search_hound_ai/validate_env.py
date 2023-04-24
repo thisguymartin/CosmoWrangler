@@ -1,6 +1,8 @@
 import logging
 import os
 
+import pkg_resources
+
 def ValidateEnv():
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     print("OPENAI_API_KEY", OPENAI_API_KEY)
@@ -12,7 +14,8 @@ def ValidateEnv():
             exit(1)
 
         if open_ai_key_value != None and open_ai_key_value != '':
-            text_file = open(".env", "w")
+            filename = pkg_resources.resource_filename(__name__, ".env")
+            text_file = open(filename, "w")
             text_file.write('OPENAI_API_KEY=' + open_ai_key_value)
             text_file.close()
             logging.info("OPENAI_API_KEY ENV saved")
