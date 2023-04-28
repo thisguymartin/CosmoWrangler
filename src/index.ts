@@ -1,16 +1,15 @@
-import figlet from "figlet";
-import { OpenAI } from "langchain/llms/openai";
+#!/usr/bin/env node
 
+import { Command } from 'commander'
+import langChainClient from './core/langchainClient';
 
-async function main() {
-  const model = new OpenAI({ openAIApiKey: process.env.OPENAI_API_KEY, temperature: 0.9 });
+const program = new Command()
 
-  const res = await model.call(
-    "What would be a good company name a company that makes colorful socks?"
-  );
+program
+          .command('search <prompt>')
+  .description('chat with chatGPT!')
+  .action(async (prompt) => {
+    await langChainClient.openAiChain(prompt)
+  })
 
-  console.log(res);
-}
-
-
-main()
+program.parseAsync(process.argv)

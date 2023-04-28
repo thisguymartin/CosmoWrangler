@@ -1,13 +1,13 @@
 {
   "name": "search-hound-js",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "index.ts",
   "scripts": {
-    "build": "npx tsc",
+    "build": "npx tsc && npm link",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "lint": "eslint --ext .js .",
+    "lint": "eslint --ext .ts --fix src",
     "commit": "cz"
   },
   "engines": {
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@types/node": "^18.16.0",
+    "colorette": "^2.0.20",
     "commander": "^10.0.1",
     "eslint": "^8.39.0",
     "figlet": "^1.6.0",
