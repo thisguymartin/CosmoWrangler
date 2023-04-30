@@ -33,7 +33,7 @@ hound --help
 To use hound command:
 
 ```bash
-hound search [search string]
+hound [search string]
 ```
 
 ### Ask GPT
@@ -41,13 +41,13 @@ hound search [search string]
 Ask GPT a question about a specific file:
 
 ```bash
-hound search [...your question here]
+hound [...your question here]
 ```
 
 Example:
 
 ```bash
-hound search "How to purge docker container and images?"
+hound "How to purge docker container and images?"
 ```
 
 ## Setting Environment Variables
