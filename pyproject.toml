@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "search-hound-ai"
-version = "0.1.8"
+name = "search_hound_ai"
+version = "0.1.9"
 description = "A CLI for GPT with a focus on simplicity and ease of use. For developer just wanting to use gpt in there command line."
 authors = ["Martin Patino <martin@sibipro.com>"]
 readme = "README.md"

@@ -1,8 +1,6 @@
 import typer
 
-from search_hound_ai.search_hound_lib import SearchHoundLib
-
-
+from search_hound_lib import SearchHoundLib
 
 def HoundClientCommands(app: typer) -> typer :
   @app.command()
