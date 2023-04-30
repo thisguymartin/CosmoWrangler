@@ -1,8 +1,0 @@
-/dist
-/node_modules
-package.json
-Procfile
-README.md
-nodemon.json
-package-lock.json
-/coverage
