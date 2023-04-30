@@ -1,6 +1,7 @@
 import typer
 
-from search_hound_lib import SearchHoundLib
+from search_hound_ai.search_hound_lib import SearchHoundLib
+
 
 def HoundClientCommands(app: typer) -> typer :
   @app.command()
@@ -10,14 +11,5 @@ def HoundClientCommands(app: typer) -> typer :
     """
     search_response = SearchHoundLib.searchHound(query)
     typer.echo(search_response, err=True, color=typer.colors.GREEN)
-
-  @app.command()
-  def openai_token_value(config: str):
-    """
-    Store the OPENAI_API_KEY in the .env file.
-    """
-    config_response = SearchHoundLib.storeOpenAIConfig(config)
-    typer.echo(config_response, err=True, color=typer.colors.YELLOW,)
-
 
   return app
