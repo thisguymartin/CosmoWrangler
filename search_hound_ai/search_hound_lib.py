@@ -2,7 +2,7 @@ import os
 import typer
 import pkg_resources
 
-from search_hound_ai.openai_lib import OpenAISearch
+from openai_lib import OpenAISearch
 
 
 class SearchHoundLib:
