@@ -56,31 +56,26 @@ Required Environment Variable:
 
 * OPENAI_API_KEY
 
-I made some scripts to add Environment Variable to your machine easier.
+Run the following scripts to if you are using .zshrc
 
-These Bash scripts make it easy for developers to add a new environment variable to their `.bashrc` or `.zshrc` file.
+```bash
+echo -n "Enter value for OPENAI_API_KEY: "
+read env_value
+echo "export OPENAI_API_KEY=$env_value" >> ~/.zshrc
+source ~/.zshrc
+echo "The OPENAI_API_KEY environment variable has been added to ~/.zshrc with value $env_value."
 
-The scripts prompt the user for the name and value of the environment variable they want to add, and then add the variable to the appropriate shell configuration file using the `echo` command.
+```
 
-Once the environment variable has been added to the shell configuration file, the scripts use the `source` command to reload the file and make the changes take effect.
+or bash
 
-To use the scripts, follow these steps:
-
-1. Open a terminal window.
-2. Navigate to the directory where the script is saved.
-3. Run the following command to give the script execute permission:
-    
-    `chmod +x add_bash_env.sh` or `chmod +x add_zshrc_env`
-    
-    
-4. Run the script by typing the following command and pressing Enter:
-
-    ./add_zshrc_env.sh
-    
-
-5. Follow the prompts to enter the name and value of the environment variable you want to add to `.bashrc` or `.zshrc`.
-6. Once the script has finished running, the environment variable will be added to the appropriate shell configuration file and available for use in your shell sessions.
-
+```bash
+echo -n "Enter value for OPENAI_API_KEY: "
+read env_value
+echo "export OPENAI_API_KEY=$env_value" >> ~/.bashrc
+source ~/.bashrc
+echo "The OPENAI_API_KEY environment variable has been added to ~/.bashrc with value $env_value."
+```
 
 ## Contributions
 
